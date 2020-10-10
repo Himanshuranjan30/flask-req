@@ -40,7 +40,7 @@ class _RequestState extends State<Request> {
   senddata() async {
     String body = json.encode(data);
     http.Response response = await http.post(
-      'http://localhost:5001',
+      'http://10.0.2.2:5001',
       headers: {"Content-Type": "application/json"},
       body: body,
     );
